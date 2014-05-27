@@ -114,6 +114,13 @@ class Raccoon
 	@ltRepY	
  	end
 	
+		def die
+	@ltRepY = "x.x"
+	@rtRepY = "x.x"
+	@ltRepO = "x..x"
+	@rtRepO = "x..x"
+	end
+	
 end
 
 	

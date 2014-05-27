@@ -113,7 +113,13 @@ class Mouse
 	def spawn
 	@ltRepY	
  	end
-	
+
+	def die
+	@ltRepY = "xx"
+	@rtRepY = "xx"
+	@ltRepO = "x.x"
+	@rtRepO = "x.x"
+	end
 end
 
 	

@@ -114,6 +114,12 @@ class Spider
 	@ltRepY	
  	end
 	
+	def die
+	@ltRepY = "x"
+	@rtRepY = "x"
+	@ltRepO = "x"
+	@rtRepO = "x"
+	end
 end
 
 	

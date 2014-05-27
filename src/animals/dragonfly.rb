@@ -114,6 +114,12 @@ class Dragonfly
 	@ltRepY	
  	end
 	
+	def die
+	@ltRepY = "x"
+	@rtRepY = "x"
+	@ltRepO = "xx"
+	@rtRepO = "xx"
+	end
 end
 
 	

@@ -119,6 +119,12 @@ class Fish
 	@ltRepY	
  	end
 	
+	def die
+	@ltRepY = "xx"
+	@rtRepY = "xx"
+	@ltRepO = "Xx"
+	@rtRepO = "xX"
+	end
 end
 
 	
