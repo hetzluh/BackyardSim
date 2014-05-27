@@ -27,6 +27,18 @@ class Butterfly
 	@type = "butterfly"
 	end
 
+	def getAnimId
+	@animalId
+	end
+
+	def getCurrX
+	@currX
+	end
+
+	def getCurrY
+	@currY
+	end
+
 	def move(dir)
 	if dir == 'l'
 	elsif dir == 'r'
@@ -99,7 +111,7 @@ class Butterfly
 	end
 
 	def spawn
-	return @ltRepY	
+	@ltRepY	
  	end
 	
 end

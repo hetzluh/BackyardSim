@@ -27,6 +27,18 @@ class Squirrel
 	@type = "squirrel"
 	end
 
+	def getAnimId
+	@animalId
+	end
+
+	def getCurrX
+	@currX
+	end
+
+	def getCurrY
+	@currY
+	end
+
 	def move(dir)
 	if dir == 'l'
 	elsif dir == 'r'
@@ -99,9 +111,15 @@ class Squirrel
 	end
 
 	def spawn
-	return @ltRepY	
+	@ltRepY	
  	end
 	
+	def die
+	@ltRepY = "xx"
+	@rtRepY = "xx"
+	@ltRepO = "xx"
+	@rtRepO = "xx"
+	end
 end
 
 	

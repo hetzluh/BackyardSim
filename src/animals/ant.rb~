@@ -27,6 +27,18 @@ class Ant
 	@type = "ant"
 	end
 
+	def getAnimId
+	@animalId
+	end
+
+	def getCurrX
+	@currX
+	end
+
+	def getCurrY
+	@currY
+	end
+
 	def move(dir)
 	if dir == 'l'
 	elsif dir == 'r'
@@ -99,8 +111,11 @@ class Ant
 	end
 
 	def spawn
-	return @ltRepY	
+	@ltRepY	
  	end
+	
+	def die
+	
 	
 end
 

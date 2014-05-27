@@ -32,6 +32,18 @@ class Fish
 	@type = "fish"
 	end
 
+	def getAnimId
+	@animalId
+	end
+
+	def getCurrX
+	@currX
+	end
+
+	def getCurrY
+	@currY
+	end
+
 	def move(dir)
 	if dir == 'l'
 	elsif dir == 'r'
@@ -104,9 +116,15 @@ class Fish
 	end
 
 	def spawn
-	return @ltRepY	
+	@ltRepY	
  	end
 	
+	def die
+	@ltRepY = "xx"
+	@rtRepY = "xx"
+	@ltRepO = "x.x"
+	@rtRepO = "x.x"
+	end
 end
 
 	

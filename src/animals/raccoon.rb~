@@ -111,7 +111,7 @@ class Raccoon
 	end
 
 	def spawn
-	return @ltRepY	
+	@ltRepY	
  	end
 	
 end

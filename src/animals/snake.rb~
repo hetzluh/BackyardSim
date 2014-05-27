@@ -27,6 +27,18 @@ class Snake
 	@type = "snake"
 	end
 
+	def getAnimId
+	@animalId
+	end
+
+	def getCurrX
+	@currX
+	end
+
+	def getCurrY
+	@currY
+	end
+
 	def move(dir)
 	if dir == 'l'
 	elsif dir == 'r'
@@ -99,9 +111,15 @@ class Snake
 	end
 
 	def spawn
-	return @ltRepY	
+	@ltRepY	
  	end
 	
+		def die
+	@ltRepY = "x."
+	@rtRepY = ".x"
+	@ltRepO = "x.."
+	@rtRepO = "..x"
+	end
 end
 
 	
