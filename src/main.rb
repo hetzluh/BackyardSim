@@ -27,23 +27,25 @@ This class is the simulation's main script
 def make_game_window(animals, objects)
   win = Window.new(25, 100, ((lines-25)/2)-2, (cols-100)/2)
   win.box(?|, ?-)
-	p1 = ((lines - 5) / 2) + 10
-	p2 = ((cols - 10) / 2) + 13
+	p1 = ((lines - 5) / 2) + 9
+	p2 = ((cols - 10) / 2) + 12
+
 	animals.each do |animal|
      win.setpos(p1, p2)
  	 win.addstr(animal.spawn)
 	  p1 -= 1
-	  p2 -= 4
+	  p2 -= 3
 	end
 
 	objects.each do |object|
      win.setpos(p1, p2)
  	 win.addstr(object.spawn)
 	  p1 -= 1
-	  p2 -= 1
+	  p2 -= 3
 	end
+
   win.refresh
-  win.close
+ # win.close
 end
 
 def make_info_window
